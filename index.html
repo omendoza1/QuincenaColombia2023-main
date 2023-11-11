@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="icon" href="img/logo.ico" />
+  <title>Liquidación de Sueldo</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/liquidacion-sueldo.css" />
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script defer src="js/header.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+
+      <a href="#" class="logo nav-link">
+        <img src="img/logo.png" alt="Tu quincena">
+        <h3>PagoPerfecto</h3>
+
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="#" class="nav-menu-link nav-link" id="inicio">Inicio</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#" class="nav-menu-link nav-link" id="calhoras">Calculadora de horas</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#" class="nav-menu-link nav-link" id="calsueldo">Calculadora de sueldo</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <form id="formulario-liquidacion" class="mb-3">
+    <fieldset>
+      <h4>
+        A continuación digite sus horas extras en cada una de las categorías:
+      </h4>
+      <br />
+      <div class="form-group">
+        <label for="horas-extra-diurnas-ordinarias">Digite el total de las horas diurnas ordinarias</label>
+        <input type="number" class="form-control" id="horas-extra-diurnas-ordinarias" min="0" value="0"
+          data-maxlength="2" />
+      </div>
+      <div class="form-group">
+        <label for="horas-extra-nocturnas-ordinarias">Digite el total de las horas nocturnas ordinarias</label>
+        <input type="number" class="form-control" id="horas-extra-nocturnas-ordinarias" min="0" value="0"
+          data-maxlength="2" />
+      </div>
+      <div class="form-group">
+        <label for="horas-recargo-nocturno-ordinario">Digite el total de las horas de recargo nocturno
+          ordinarias</label>
+        <input type="number" class="form-control" id="horas-recargo-nocturno-ordinario" min="0" value="0"
+          data-maxlength="2" />
+      </div>
+      <div class="form-group">
+        <label for="horas-extra-diurnas-festivas">Digite el total de las horas diurnas festivas (domingos y
+          festivos)</label>
+        <input type="number" class="form-control" id="horas-extra-diurnas-festivas" min="0" value="0"
+          data-maxlength="2" />
+      </div>
+      <div class="form-group">
+        <label for="horas-extra-nocturnas-festivas">Digite el total de las horas nocturnas festivas (domingos y
+          festivos)</label>
+        <input type="number" class="form-control" id="horas-extra-nocturnas-festivas" min="0" value="0"
+          data-maxlength="2" />
+      </div>
+      <div class="form-group">
+        <label for="horas-recargo-nocturno-festivo">Digite el total de las horas de recargo nocturno festivo (domingos
+          y festivos)</label>
+        <input type="number" class="form-control" id="horas-recargo-nocturno-festivo" min="0" value="0"
+          data-maxlength="2" />
+      </div>
+      <div class="form-group">
+        <label class="form-group" for="dias-festivos-trabajados">Digite los días festivos trabajados totales (domingos y
+          festivos)</label>
+        <input type="number" class="form-control" id="dias-festivos-trabajados" value="0" data-maxlength="2" />
+      </div>
+      <button type="button" class="btn btn-primary" id="btn-calcular">
+        Calcular
+      </button>
+      <button type="button" class="btn btn-secondary" id="btn-limpiar">
+        Limpiar
+      </button>
+      <div class="resultado" id="resultado"></div>
+    </fieldset>
+  </form>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Contacto</h3>
+          <p>omaryire@hotmail.es</p>
+          <p class="copyright">
+            Desarrollado por:
+            <span class="developer">Omar Yire Mendoza Comas</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/calculadora-sueldo.js"></script>
+
+</html>
