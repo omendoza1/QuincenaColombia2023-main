@@ -105,9 +105,7 @@ body {
 
 /* MOBILE */
 @media (max-width: 912px) {
-  body {
-    padding-top: 70px;
-  }
+  
 
   .header {
     height: 60px;
