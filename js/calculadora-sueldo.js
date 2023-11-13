@@ -28,7 +28,7 @@ function calcularSueldo() {
   const recargoNocturnoFestivo = 2.10; // 35% nocturno + 75% festivo
 
   // Calcular el total devengado
-  let totalDevengado = sueldoBase;
+  let totalDevengado = sueldoBase/2;
   totalDevengado += valorHoraOrdinaria * recargoHoraExtraDiurna * horasExtraDiurnasOrdinarias;
   totalDevengado += valorHoraOrdinaria * recargoHoraExtraNocturna * horasExtraNocturnasOrdinarias;
   totalDevengado += valorHoraOrdinaria * recargoHoraExtraDiurnaFestiva * horasExtraDiurnasFestivas;
